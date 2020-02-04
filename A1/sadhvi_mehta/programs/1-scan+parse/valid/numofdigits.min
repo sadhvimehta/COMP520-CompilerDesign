@@ -1,0 +1,23 @@
+# Find number of digits in number (positive integers only)
+
+# below is variable that will store inputted number
+var input: int = 0;
+
+read(input);
+
+if (input == 0) {
+	print(input);
+}
+
+else {
+	# find number of zeroes/places in input
+	var inputLength: int = 0; 
+	var quotient: int = input;
+
+	while (quotient > 0) {
+		inputLength = inputLength + 1;
+		quotient = quotient / 10;
+	}
+
+	print(inputLength);
+}

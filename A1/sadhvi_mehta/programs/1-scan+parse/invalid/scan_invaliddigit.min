@@ -1,0 +1,3 @@
+# Intended issue: invalid integer value in scanner (e.g: 08)
+
+var x: int = 08;

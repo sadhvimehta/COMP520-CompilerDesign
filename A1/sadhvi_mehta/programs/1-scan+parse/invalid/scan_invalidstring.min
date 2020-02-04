@@ -1,0 +1,3 @@
+# Intended issue: malformed string - should throw unexpected char error in scanner
+
+var x: string = "hello"bye";

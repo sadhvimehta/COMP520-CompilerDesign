@@ -1,0 +1,11 @@
+# This program was used for testing to ensure if-elif statements worked properly
+# note: specifications imply that squiggly parentheses MUST be used
+
+if(1 > 2) {
+	print("1 > 2\n");
+	print("end of first if\n");
+}
+else if(2 > 1) {
+	print("2 > 1\n");
+	print("end of second if\n");
+}

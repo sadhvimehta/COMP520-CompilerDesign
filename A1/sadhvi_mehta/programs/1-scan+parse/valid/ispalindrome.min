@@ -1,0 +1,52 @@
+# Verify if number(integers only) is palindrome 
+# (note: negative numbers are not palindromes) (regardless, cannot have negative numbers)
+
+# below is variable that will store inputted number
+#var input: int = 0;
+
+read(input);
+
+# edge case 1: input number is 0
+#if (input == 0) {
+#	print("True");
+#}
+
+#else {
+
+#	var isPalindrome: bool = True;
+
+	# find number of zeroes/places in input
+#	var inputLength: int = 0; 
+#	var quotient: int = input;
+
+#	while (quotient > 0) {
+#		inputLength = inputLength + 1;
+#		quotient = quotient / 10;
+#	}
+
+	# check if palindrome
+#	var inputDecimalCount: int = 10 * inputLength / 10;
+#	while (input > 0) {
+		# get left most digit
+#		var left = input / inputDecimalCount;
+		# get right most digit (note the logic for modulo 10)
+#		var right = input - (input / 10 * 10);
+		# compare left and right
+#		if (left != right) {
+#			print("False");
+#			isPalindrome = False;
+			# set input to 0 for fast exit
+#			input = 0;
+#		}
+
+		# remove left most and right most digits
+#		input = (input - (input / inputDecimalCount * inputDecimalCount)) / 10;
+		
+		# update decimal count
+#		inputDecimalCount = inputDecimalCount / 100;
+#	}
+
+#	if (isPalindrome) {
+#		print("True");
+#	}
+#}

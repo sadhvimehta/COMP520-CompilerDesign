@@ -1,0 +1,3 @@
+# Intended issue: use symbol that is not defined in language - error arises in parser
+
+var x: int = 10 . 10;

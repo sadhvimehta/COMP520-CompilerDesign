@@ -1,0 +1,7 @@
+# Intended issue: contains a stand alone else if without an initial if - parser error
+
+
+var x: bool = True;
+else if(x) {
+	print("ERROR\n");
+}

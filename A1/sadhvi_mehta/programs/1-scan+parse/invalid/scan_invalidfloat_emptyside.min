@@ -1,0 +1,3 @@
+# Intended issue: invalid float value due to empty LHS - error in scanner
+
+var x: float = .2;

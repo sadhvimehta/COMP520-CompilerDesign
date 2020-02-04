@@ -1,0 +1,3 @@
+# Intended issue: incorrect declaration (no initialization) - error in parser
+
+var x: bool;

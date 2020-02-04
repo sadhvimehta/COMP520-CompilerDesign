@@ -1,0 +1,24 @@
+# Program tests if an INTEGER number is prime or not
+
+# read input
+var x: int = 0;
+read(x);
+
+# check if prime
+var isPrime: bool = True;
+var counter: int = 2;
+
+while(isPrime && (counter < x)) {
+	var quotient: int = x / counter;
+	
+	if((counter * quotient) == x) {
+		isPrime = False;
+		print(x + " is NOT prime\n");
+	}
+
+	counter = counter + 1;	
+}
+
+if(isPrime) {
+	print(x + " is prime\n");
+}
